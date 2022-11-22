@@ -2,6 +2,31 @@
 
 ### Overview
 
+This repo is Android application to use Custom Compact S1 downloaded from Azure Custom Vision.
+
+This repo is a fork from this:
+> https://github.com/tensorflow/examples/tree/tflmm/v0.4.0/lite/examples/object_detection/android
+
+It's important to use this particular branch "tflmm/v0.4.0" because other branches use TFLiteTaskVision and it doesn't support Custom Compact S1 by Custom Vision.
+
+If you are having struggles using the TFLite model exported from custom vision, this is the right place!!
+
+Follow these steps:
+- Download TFLite Custom Vision model (Custom Compact S1 type) 
+<img width="602" alt="Screenshot at Nov 22 19-23-55" src="https://user-images.githubusercontent.com/1677958/203392242-64fc0038-291b-4f19-b7b9-9f314e0c3f2a.png">
+- Add metadata to your model. Follow this: https://www.tensorflow.org/lite/models/convert/metadata_writer_tutorial#object_detectors
+- Create Assets folder in "main/app/src/main" and copy your model (detect.tflite)
+
+It's all done.
+
+Fingers crossed and everything should be ok!!!
+
+I hope this could help someone, I struggled a lot before I was able to use this model.
+
+P.S.
+Here you can find Custom Vision examples in python, c#, javascript: https://github.com/Azure-Samples/customvision-export-samples
+
+### Original Overview
 This is a camera app that continuously detects the objects (bounding boxes and
 classes) in the frames seen by your device's back camera, using a quantized
 [MobileNet SSD](https://github.com/tensorflow/models/tree/master/research/object_detection)
