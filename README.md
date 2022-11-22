@@ -1,4 +1,4 @@
-# TensorFlow Lite Object Detection Android Demo
+# TensorFlow Lite Object Detection Android Demo for Custom Compact S1 downloaded from Azure Custom Vision
 
 ### Overview
 
